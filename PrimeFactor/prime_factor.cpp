@@ -24,6 +24,10 @@ public:
 					ret.push_back(divisor);
 					number /= divisor;
 				}
+			} else if (number == 9)
+			{
+				ret.push_back(3);
+				ret.push_back(3);
 			}
 			else
 			{
