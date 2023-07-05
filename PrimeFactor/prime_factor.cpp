@@ -11,8 +11,11 @@ public:
 		{
 			if (number == 4)
 			{
-				ret.push_back(2);
-				ret.push_back(2);
+				while (number%2 == 0)
+				{
+					ret.push_back(2);
+					number /= 2;
+				}
 			} else
 			{
 				ret.push_back(number);
