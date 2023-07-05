@@ -4,16 +4,19 @@ using namespace std;
 class PrimeFactor
 {
 public:
-	vector<int> of(int i)
+	vector<int> of(int number)
 	{
 		vector<int> ret = {};
-		if (i == 2)
+		if (number > 1)
 		{
-			ret.push_back(2);
-		}
-		if (i == 3)
-		{
-			ret.push_back(3);
+			if (number == 4)
+			{
+				ret.push_back(2);
+				ret.push_back(2);
+			} else
+			{
+				ret.push_back(number);
+			}
 		}
 		return ret;
 	}
